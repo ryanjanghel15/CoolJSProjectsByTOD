@@ -1,0 +1,66 @@
+body{
+    background-color: hsl(0, 0%, 14%);
+    margin: 0%;
+    text-align: center;
+    font-size: 1.5em;
+    color:azure;
+    font-family: 'jpkaswild';
+}
+
+select{
+    transform: translateY(-2px);
+    font-family: 'jpkaswild';
+    border: 5px solid black;
+    border-radius: 2px;
+}
+
+h1{
+    animation: loadin2 1s both;
+}
+
+button{
+    font-family: 'jpkaswild';
+    padding: 5px 3px;
+    font-size: large;
+}
+
+#inputBox{
+    width: 400px;
+    background-color: azure;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    box-shadow: 5px 5px 5px black;
+    padding: 40px 10px;
+    animation: loadin1 1s both;
+    color:black;
+}
+
+/*JpkasWild Font Loadin */
+@font-face {
+  font-family: 'jpkaswild';
+  src: url('/font/JqkasWild-w1YD6.ttf') format('truetype');
+}
+
+/* LoadIn Animation */
+@keyframes loadin1 {
+    from{
+        transform: translateY(50px) translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px) translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes loadin2 {
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

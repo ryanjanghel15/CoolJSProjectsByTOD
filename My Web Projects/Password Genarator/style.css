@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+    background: linear-gradient(135deg,black,rgb(0, 36, 0));
+    text-align: center;
+    font-family: ubuntuRegular;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(0, 151, 0);
+
+}
+
+button{
+    font-family: ubuntuRegular;
+}
+
+#inputBox{
+    width: 500px;
+    height: 300px;
+    background-color: hsl(0, 0%, 11%);
+    margin-right: auto;
+    margin-left: auto;
+    border: 5px solid green;
+    border-radius: 5px;
+    box-shadow:3px 2px white ;
+    text-align: center;
+}
+
+#displayBox{
+    width: 400px;
+    height: 29px;
+    background-color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+    font-size: 1.5em;
+
+
+}
+.caseBox{
+    transform: translateY(2.5px);
+    margin: 10px;
+}
+@font-face {
+    font-family: "ubuntuRegular";
+    src: url(/font/UbuntuMono-Regular.ttf);
+}

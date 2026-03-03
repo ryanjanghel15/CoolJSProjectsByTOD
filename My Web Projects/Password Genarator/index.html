@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Genarator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Password Genarator</h1>
+    <div id="inputBox">
+        <p id="displayBox">|</p><br>
+        <label for="smallCaseCbox">Smaller Case</label>
+        <input class="caseBox" id="smallCaseCbox" type="checkbox">
+
+        <label for="bigCaseCbox">Bigger Case</label>
+        <input class="caseBox" id="bigCaseCbox" type="checkbox"><br>
+
+        <label for="symCbox">Symbol</label>
+        <input class="caseBox" id="symCbox" type="checkbox">
+
+        <label for="numCbox">Numeral</label>
+        <input class="caseBox" id="numCbox" type="checkbox"><br><br>
+        <label>length:</label><input id="lengthInput" type="number" min="1">
+        <br><br>
+        <button id="userBtn">Generate</button>
+    </div>
+</body>
+<script src="/index.js"></script>
+
+</html>
