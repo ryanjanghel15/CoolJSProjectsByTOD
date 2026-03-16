@@ -1,0 +1,83 @@
+body {
+    margin: 0%;
+    background-color: antiquewhite;
+    font-family: "digital";
+}
+
+button{
+    font-size: 4.5em;
+    margin: 10px;
+    padding: 10px 20px;
+}
+#calculator {
+    width: 500px;
+    height: 700px;
+    background-color: hsl(0, 0%, 31%);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    box-shadow: 5px 5px black;
+    border-radius: 10px;
+    animation: ease-in-out revolve 2.5s infinite both;
+}
+
+#displayLable {
+    width: 400px;
+    height: 100px;
+    background-color: aliceblue;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+#equationDisplay {
+    top: 100px;
+    font-size: 4em;
+    background-color: aliceblue;
+}
+
+#resultDisplay{
+    position: relative;
+    left: 110px;
+}
+#controlPanel{
+    margin: 10px;
+    text-align: center;
+}
+
+#controlPanel button{
+    flex: 1;
+    padding: 10px 15px; 
+    box-sizing: border-box;
+}
+@keyframes revolve {
+    0% {
+        box-shadow: 5px 5px black;
+    }
+
+    25% {
+        box-shadow: -5px 5px black;
+    }
+
+    50% {
+        box-shadow: -5px -5px black;
+    }
+
+    75% {
+        box-shadow: 5px -5px black;
+    }
+
+    100% {
+        box-shadow: 5px 5px black;
+
+    }
+}
+
+@font-face {
+    font-family: "digital";
+    src: url(/font/digital-7.ttf);
+}

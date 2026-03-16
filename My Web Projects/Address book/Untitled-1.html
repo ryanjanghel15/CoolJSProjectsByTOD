@@ -1,0 +1,17 @@
+<select id="mySelect">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+<button onclick="displayValue()">Get Value</button>
+<p>Selected value: <span id="output"></span></p>
+<script>
+  
+function displayValue() {
+  const selectElement = document.getElementById("mySelect");
+  const selectedValue = selectElement.value;
+  document.getElementById("output").textContent = selectedValue;
+  console.log("Selected Value:", selectedValue);
+}
+</script>

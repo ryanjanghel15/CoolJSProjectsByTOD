@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ContactMyPeople | Address</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="text-bg-dark ">
+  <nav class="navbar fixed-top navbar-nav-scroll navbar-expand-lg bg-body-tertiary">
+    <div class="container-md">
+      <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample"
+        href="#">ContactMyPeople</a>
+      <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img width="30" src="/person_add_50dp_000000_FILL0_wght400_GRAD0_opsz48.svg">
+      </a>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"><a class="navbar-brand" data-bs-toggle="offcanvas"
+          href="#offcanvasExample" aria-controls="offcanvasExample" href="#">ContactMyPeople</a></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        <label>Search:</label>
+        <select id="contactList" class="ms-auto me-2">
+          <option class="contactOptions" value="all">All</option>
+        </select>
+        <select id="TagList">
+          <option class="tagOptions" value="default">Default</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <div id="DisplayBox" class="container-sm">
+
+  </div>
+  <!-- Modal -->
+  <div class="modal modal-lg fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Add Contact</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class=" col-5 col-lg-3"><label>Name:</label></div>
+            <div class="col-6 col-lg-2"><input id="nameIN" type="text"></div>
+            <div class=" col-5 col-lg-3"><label>Age:</label></div>
+            <div class="col-6 col-lg-2"><input id="ageIN" type="number"></div>
+            <div class=" col-5 col-lg-3"><label>Date of Birth:</label></div>
+            <div class="col-6 col-lg-8"><input id="dobIN" type="date"></div>
+            <div class=" col-5 col-lg-3"><label>Address:</label></div>
+            <div class="col-6 col-lg-8"><input id="addIN" type="text"></div>
+            <div class=" col-5 col-lg-3"><label>Contact No.:</label></div>
+            <div class="col-6 col-lg-2"><input id="conIN" type="text"></div>
+            <div class=" col-5 col-lg-3"><label>Relation:</label></div>
+            <div class="col-6 col-lg-2"><input id="relIN" type="text"></div>
+            <div class=" col-5 col-lg-3"><label>Email:</label></div>
+            <div class="col-6 col-lg-8"><input id="emailIN" type="email"></div>
+            <div style="margin-top: 10px;">
+              <hr>
+              <h3 style="transform: translateY(-35px);"><span style="background-color: white;">Optional</span>
+              </h3>
+            </div>
+            <div class=" col-5 col-lg-3"><label>Tag:</label></div>
+            <div class="col-6 col-lg-2"><input id="tagIN" type="text"></div>
+            <div class=" col-5 col-lg-3"><label>Color:</label></div>
+            <div class="col-6 col-lg-4"><select id="tagColorIN">
+                <option value="blue">blue</option>
+                <option value="red">red</option>
+                <option value="yellow">yellow</option>
+                <option value="black">black</option>
+              </select></div>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button id="userBtn" type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
