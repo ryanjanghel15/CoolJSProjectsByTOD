@@ -1,0 +1,194 @@
+body {
+    background: linear-gradient(to right, rgb(255, 106, 106), rgb(165, 0, 0));
+    text-align: center;
+    font-family: Iosevka_Charon_Mono;
+    font-size: larger;
+}
+
+.cardwapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#forntScreenDisplay {
+    position: fixed;
+    /* Fixes position relative to viewport */
+    top: 50%;
+    /* Moves top edge to middle */
+    left: 50%;
+    /* Moves left edge to middle */
+    transform: translate(-50%, -50%);
+    /* Shifts image back by half its width/height */
+
+    /* Optional: Ensure image doesn't exceed screen size */
+    max-width: 90%;
+    max-height: 90%;
+    height: 500px;
+
+}
+
+#restartBtn {
+    position: fixed;
+    /* Fixes position relative to viewport */
+    top: 50%;
+    /* Moves top edge to middle */
+    left: 50%;
+    /* Moves left edge to middle */
+    transform: translate(-50%, -50%);
+    /* Shifts image back by half its width/height */
+
+    /* Optional: Ensure image doesn't exceed screen size */
+    max-width: 90%;
+    max-height: 90%;
+    font-size: 60px;
+    padding: 5px;
+}
+
+button {
+    font-family: Iosevka_Charon_Mono;
+    padding: 3px;
+}
+
+#moreSetpanel {
+    background-color: aliceblue;
+    width: 70vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+
+}
+
+.panelsetList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-body {
+    width: 270px;
+    height: 320px;
+    margin: 10px;
+
+}
+
+.hrHeading {
+    padding: 10px;
+}
+
+.hrHeading p {
+    text-align: left;
+    transform: translateY(25px);
+    width: fit-content;
+    background-color: aliceblue;
+    left: 0%;
+}
+
+@property --grad-start1 {
+    syntax: '<color>';
+    initial-value: rgb(51, 87, 118);
+    inherits: false;
+}
+
+@property --grad-end1 {
+    syntax: '<color>';
+    initial-value: rgb(176, 218, 255);
+    inherits: false;
+}
+
+.card[data-cardStyleId="1"] .card-body {
+    background-image: linear-gradient(45deg, var(--grad-start1), var(--grad-end1));
+    transition: --grad-start 0.5s ease, --grad-end 0.5s ease;
+
+}
+
+.card:hover .card-body {
+
+    --grad-start1: rgb(176, 218, 255);
+    --grad-end1: rgb(51, 87, 118);
+}
+
+@property --grad-start2 {
+    syntax: '<color>';
+    initial-value: rgb(255, 1, 1);
+    inherits: false;
+}
+
+@property --grad-end2 {
+    syntax: '<color>';
+    initial-value: rgb(255, 102, 102);
+    inherits: false;
+}
+
+.card[data-cardStyleId="2"] .card-body {
+    background-image: linear-gradient(45deg, var(--grad-start2), var(--grad-end2));
+    transition: --grad-start2 0.5s ease, --grad-end2 0.5s ease;
+}
+
+.card:hover .card-body {
+
+    --grad-end2: rgb(255, 1, 1);
+    --grad-start2: rgb(255, 167, 167);
+}
+
+@property --grad-start3 {
+    syntax: '<color>';
+    initial-value: rgb(115, 255, 1);
+    inherits: false;
+}
+
+@property --grad-end3 {
+    syntax: '<color>';
+    initial-value: rgb(51, 92, 0);
+    inherits: false;
+}
+
+.card[data-cardStyleId="3"] .card-body {
+    background-image: linear-gradient(45deg, var(--grad-start3), var(--grad-end3));
+    transition: --grad-start3 0.5s ease, --grad-end3 0.5s ease;
+}
+
+.card:hover .card-body {
+
+    --grad-end3: rgb(115, 255, 1);
+    --grad-start3: rgb(51, 92, 0);
+}
+img:not([src]), 
+img[src=""] {
+    display: none !important;
+}
+input{
+    font-family: Iosevka_Charon_Mono;
+
+}
+@media (max-width: 768px) {
+    .card-body {
+        width: 70px;
+        height: 100px;
+        margin: 10px;
+    }
+    img{
+        width: 50%;
+    }
+}
+
+@media (max-width: 425px) {
+    .card-body {
+        width: 50px;
+        height: 80px;
+        margin: 10px;
+    }
+    img{
+        width: 50%;
+    }
+}
+
+@font-face {
+    font-family: Iosevka_Charon_Mono;
+    src: url(/fonts/Iosevka_Charon_Mono/IosevkaCharonMono-Regular.ttf);
+}

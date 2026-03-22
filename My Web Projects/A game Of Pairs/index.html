@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>A Game Of Pairs...</h1>
+    <div class="controlpanel">
+        <button id="userStartBtn">Start</button><button id="settingBtn"><ion-icon
+                name="settings-outline"></ion-icon></button><br><br>
+        <div id="moreSetpanel">
+            <span class="hrHeading">
+                <p>&nbsp; &nbsp; Card Style</p>
+                <hr>
+            </span>
+            <div class="panelsetList">
+                <div data-cardStyleId="1" class="card">
+                    <input value="1" name="radioBtnGrp1" class="cardStyleSelector" type="radio" checked>
+                    <div class="card-body">
+                        <img src="/Media/Q-removebg-preview.png">
+                    </div>
+                </div>
+                <div data-cardStyleId="2" class="card">
+                    <input value="2" name="radioBtnGrp1" class="cardStyleSelector" type="radio">
+                    <div class="card-body">
+                        <img src="/Media/Q-removebg-preview.png">
+                    </div>
+                </div>
+                <div data-cardStyleId="3" class="card">
+                    <input value="3" name="radioBtnGrp1" class="cardStyleSelector" type="radio">
+                    <div class="card-body">
+                        <img src="/Media/Q-removebg-preview.png">
+                    </div>
+                </div>
+            </div>
+            <span class="hrHeading">
+                <p>&nbsp; &nbsp; Symbols</p>
+                <hr>
+            </span>
+            <div class="panelsetList">
+                <div data-cardStyleId="1" class="card">
+                    <input value="1" class="cardSymbolSelector" type="checkbox" checked>
+                    <img src="/Media/1.png">
+                </div>
+                <div data-cardStyleId="1" class="card">
+                    <input value="2" class="cardSymbolSelector" type="checkbox" checked>
+                    <img src="/Media/2.png">
+                </div>
+                <div data-cardStyleId="1" class="card">
+                    <input value="3" class="cardSymbolSelector" type="checkbox" checked>
+                    <img src="/Media/3.png">
+                </div>
+                <div data-cardStyleId="1" class="card">
+                    <input value="4" class="cardSymbolSelector" type="checkbox" checked>
+                    <img src="/Media/4.png">
+                </div>
+                <div data-cardStyleId="1" class="card">
+                    <input value="5" class="cardSymbolSelector" type="checkbox" checked>
+                    <img src="/Media/5.png">
+                </div>
+            </div>
+
+
+
+        </div>
+        <label>No. Pairs of Cards:</label><input id="noOfCardsIn" type="number" max="10" min="1">
+        <p id="warningDisplay"></p>
+    </div>
+    <div class="cardwapper">
+    </div>
+    <img id="forntScreenDisplay" src="">
+    <button id="restartBtn">Restart</button>
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
